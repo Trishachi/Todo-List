@@ -8,10 +8,8 @@ body {
   background: -webkit-linear-gradient(left, #f2fcfe, #1c92d2);
   background: -o-linear-gradient(left, #f2fcfe, #1c92d2);
   background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
-/* Todo List Styles  */
 h1 {
   background: #2980e9;
   color: white;
@@ -20,10 +18,6 @@ h1 {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 400;
-}
-
-.fa-edit {
-  float: right;
 }
 
 ul {
@@ -39,10 +33,6 @@ li {
   color: #666;
 }
 
-li:nth-child(2n){
-  background: #f7f7f7;
-}
-
 span {
   background: #e74c3c;
   height: 40px;
@@ -53,11 +43,6 @@ span {
   display: inline-block;
   transition: 0.2s linear;
   opacity: 0;
-}
-
-li:hover span {
-  width: 40px;
-  opacity: 1.0;
 }
 
 input {
@@ -71,10 +56,33 @@ input {
   border: 3px solid rgba(0,0,0,0);
 }
 
+
+/* Todo List Styles  */
+
+.fa-edit {
+  float: right;
+}
+
+
+li:nth-child(2n){
+  background: #f7f7f7;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
+}
+
+
+
 input:focus {
   background: white;
   border: 3px solid #2980e9;
   outline: none;
+}
+
+::placeholder {
+  opacity: 0.7;
 }
 
 .completed {

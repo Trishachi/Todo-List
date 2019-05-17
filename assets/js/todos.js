@@ -28,3 +28,8 @@ $("input[type = 'text']").keypress(function(event){
     //Clear out the input field
   }
 });
+
+//Toogling Add new todo Application
+$(".fa-edit").click(function(){
+  $("input[type='text']").fadeToggle();
+});
