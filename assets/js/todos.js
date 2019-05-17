@@ -29,7 +29,18 @@ $("input[type = 'text']").keypress(function(event){
   }
 });
 
+//Code for Editing todos
+//Select Todo for edit by double clicking
+$("ul").on("dbclick", "li", function(){
+//code runs when an li is clikced inside the ul
+  alert("double clicked!");
+});
+//change list to input field
+//Enter new text in input field
+// replace list item with new todoText
+// display new txt on List
+
 //Toogling Add new todo Application
-$(".fa-edit").click(function(){
+$(".fa-plus").click(function(){
   $("input[type='text']").fadeToggle();
 });
